@@ -1,0 +1,25 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : [{"id":2,"name":"Broaster","parentCategoryId":null,"isActive":true,"createdAt":"2025-07
+                    -03T04:10:58.796027Z","updatedAt":null},{"id":3,"name":"Bebidas","parentCategoryId":nul
+                    l,"isActive":true,"created...
+RawContent        : HTTP/1.1 200 OK
+                    Transfer-Encoding: chunked
+                    Content-Type: application/json; charset=utf-8
+                    Date: Thu, 03 Jul 2025 07:51:32 GMT
+                    Server: Kestrel
+                    
+                    [{"id":2,"name":"Broaster","parentCategoryId":null,"...
+Forms             : {}
+Headers           : {[Transfer-Encoding, chunked], [Content-Type, application/json; charset=utf-8], [Date, 
+                    Thu, 03 Jul 2025 07:51:32 GMT], [Server, Kestrel]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 500
+
+
+

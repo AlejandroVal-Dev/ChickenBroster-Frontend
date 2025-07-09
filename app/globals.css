@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta Principal - Naranja #fe9c15 */
+    --primary: 28 100% 54%; /* #fe9c15 */
+    --primary-foreground: 0 0% 100%;
+
+    /* Colores Complementarios */
+    --secondary: 208 100% 85%; /* Azul claro complementario */
+    --secondary-foreground: 208 100% 15%;
+
+    /* Colores de Acento */
+    --accent: 35 100% 95%; /* Naranja muy claro */
+    --accent-foreground: 28 100% 25%;
+
+    /* Colores de Fondo */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* Colores de Tarjetas */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    /* Colores de Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Colores Neutros */
+    --muted: 35 20% 96%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    /* Colores de Borde */
+    --border: 35 30% 91%;
+    --input: 35 30% 91%;
+    --ring: 28 100% 54%;
+
+    /* Colores Destructivos */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Radio de Bordes */
+    --radius: 0.75rem;
+
+    /* Colores de Gráficos */
+    --chart-1: 28 100% 54%; /* Naranja principal */
+    --chart-2: 208 100% 50%; /* Azul complementario */
+    --chart-3: 45 100% 60%; /* Amarillo análogo */
+    --chart-4: 15 100% 55%; /* Rojo-naranja análogo */
+    --chart-5: 200 100% 45%; /* Azul oscuro */
+
+    /* Sidebar con tema naranja */
+    --sidebar-background: 35 50% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 28 100% 54%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 35 60% 95%;
+    --sidebar-accent-foreground: 28 80% 25%;
+    --sidebar-border: 35 40% 88%;
+    --sidebar-ring: 28 100% 54%;
+
+    /* Colores de Estado */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 100% 51%;
+    --warning-foreground: 0 0% 98%;
+    --info: 208 100% 50%;
+    --info-foreground: 0 0% 98%;
+
+    /* Colores Específicos del Restaurante */
+    --restaurant-orange: 28 100% 54%; /* #fe9c15 */
+    --restaurant-orange-light: 35 100% 85%;
+    --restaurant-orange-dark: 28 100% 35%;
+    --restaurant-blue: 208 100% 50%;
+    --restaurant-blue-light: 208 100% 85%;
+    --restaurant-green: 142 76% 36%;
+    --restaurant-green-light: 142 76% 85%;
+    --restaurant-red: 0 84% 60%;
+    --restaurant-red-light: 0 84% 85%;
+  }
+
+  .dark {
+    /* Paleta Principal - Modo Oscuro */
+    --primary: 28 85% 45%; /* Naranja menos saturado */
+    --primary-foreground: 0 0% 98%;
+
+    /* Colores Complementarios */
+    --secondary: 208 50% 25%;
+    --secondary-foreground: 208 100% 85%;
+
+    /* Colores de Acento */
+    --accent: 28 30% 15%;
+    --accent-foreground: 28 85% 70%;
+
+    /* Colores de Fondo */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    /* Colores de Tarjetas */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    /* Colores de Popover */
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Colores Neutros */
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    /* Colores de Borde */
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 28 85% 45%;
+
+    /* Colores Destructivos */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Colores de Gráficos - Modo Oscuro */
+    --chart-1: 28 85% 55%;
+    --chart-2: 208 85% 60%;
+    --chart-3: 45 85% 65%;
+    --chart-4: 15 85% 60%;
+    --chart-5: 200 85% 55%;
+
+    /* Sidebar - Modo Oscuro */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 28 85% 55%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 28 85% 55%;
+
+    /* Colores de Estado - Modo Oscuro */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 85% 55%;
+    --warning-foreground: 0 0% 98%;
+    --info: 208 85% 60%;
+    --info-foreground: 0 0% 98%;
+
+    /* Colores Específicos del Restaurante - Modo Oscuro */
+    --restaurant-orange: 28 85% 55%;
+    --restaurant-orange-light: 28 60% 25%;
+    --restaurant-orange-dark: 28 100% 25%;
+    --restaurant-blue: 208 85% 60%;
+    --restaurant-blue-light: 208 60% 25%;
+    --restaurant-green: 142 70% 45%;
+    --restaurant-green-light: 142 50% 25%;
+    --restaurant-red: 0 70% 50%;
+    --restaurant-red-light: 0 50% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Clases utilitarias personalizadas */
+@layer utilities {
+  .bg-restaurant-orange {
+    background-color: hsl(var(--restaurant-orange));
+  }
+  .text-restaurant-orange {
+    color: hsl(var(--restaurant-orange));
+  }
+  .border-restaurant-orange {
+    border-color: hsl(var(--restaurant-orange));
+  }
+
+  .bg-restaurant-orange-light {
+    background-color: hsl(var(--restaurant-orange-light));
+  }
+  .text-restaurant-orange-light {
+    color: hsl(var(--restaurant-orange-light));
+  }
+
+  .bg-restaurant-blue {
+    background-color: hsl(var(--restaurant-blue));
+  }
+  .text-restaurant-blue {
+    color: hsl(var(--restaurant-blue));
+  }
+
+  .bg-restaurant-green {
+    background-color: hsl(var(--restaurant-green));
+  }
+  .text-restaurant-green {
+    color: hsl(var(--restaurant-green));
+  }
+
+  .bg-restaurant-red {
+    background-color: hsl(var(--restaurant-red));
+  }
+  .text-restaurant-red {
+    color: hsl(var(--restaurant-red));
+  }
+
+  /* Gradientes personalizados */
+  .bg-gradient-orange {
+    background: linear-gradient(135deg, hsl(var(--restaurant-orange-light)), hsl(var(--restaurant-orange)));
+  }
+
+  .bg-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--restaurant-blue-light)), hsl(var(--restaurant-blue)));
+  }
+
+  .bg-gradient-green {
+    background: linear-gradient(135deg, hsl(var(--restaurant-green-light)), hsl(var(--restaurant-green)));
+  }
+
+  .bg-gradient-red {
+    background: linear-gradient(135deg, hsl(var(--restaurant-red-light)), hsl(var(--restaurant-red)));
+  }
+}
+
+/* Animaciones suaves para transiciones de tema */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
