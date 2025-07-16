@@ -71,7 +71,7 @@ export default function LoginPage() {
 
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-center">Gestiona tu restaurante de manera eficiente</h2>
-            
+            {/* Lista de características 
             <div className="grid grid-cols-1 gap-4">
               <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
                 <ChefHat className="w-6 h-6 text-orange-200" />
@@ -105,6 +105,33 @@ export default function LoginPage() {
                 </div>
               </div>
             </div>
+            */}
+            <div className="grid grid-cols-2 gap-4 mt-6">
+  <div className="bg-white/10 rounded-xl p-5 flex flex-col items-center text-center hover:bg-white/20 transition">
+    <ChefHat className="w-8 h-8 text-orange-200 mb-2" />
+    <h3 className="font-semibold text-white">Gestión de Cocina</h3>
+    <p className="text-sm text-orange-100">Control de inventario y órdenes</p>
+  </div>
+
+  <div className="bg-white/10 rounded-xl p-5 flex flex-col items-center text-center hover:bg-white/20 transition">
+    <ShoppingCart className="w-8 h-8 text-orange-200 mb-2" />
+    <h3 className="font-semibold text-white">Punto de Venta</h3>
+    <p className="text-sm text-orange-100">Ventas rápidas y eficientes</p>
+  </div>
+
+  <div className="bg-white/10 rounded-xl p-5 flex flex-col items-center text-center hover:bg-white/20 transition">
+    <BarChart3 className="w-8 h-8 text-orange-200 mb-2" />
+    <h3 className="font-semibold text-white">Reportes y Analytics</h3>
+    <p className="text-sm text-orange-100">Análisis detallado de ventas</p>
+  </div>
+
+  <div className="bg-white/10 rounded-xl p-5 flex flex-col items-center text-center hover:bg-white/20 transition">
+    <Users className="w-8 h-8 text-orange-200 mb-2" />
+    <h3 className="font-semibold text-white">Gestión de Personal</h3>
+    <p className="text-sm text-orange-100">Control de usuarios y roles</p>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
